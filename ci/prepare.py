@@ -20,10 +20,11 @@ def find_changed_dockerfiles():
     """
     # STEP 1: find out the git compare string
     build_num = os.environ.get('CIRCLE_BUILD_NUM')
-    info_api = 'https://circleci.com/api/v1.1/project/github/%s/%s/%s' % (
+    info_api = 'https://circleci.com/api/v1.1/project/github/%s/%s/%s?circle-token=%s' % (
         os.environ.get('CIRCLE_PROJECT_USERNAME'),
         os.environ.get('CIRCLE_PROJECT_REPONAME'),
-        build_num
+        build_num,
+        os.environ.get('CIRCLE_TOKEN')
     )
 
     print('[*] Fetching build info from %s...' % info_api)
