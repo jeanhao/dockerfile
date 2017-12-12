@@ -7,7 +7,7 @@ machine:
 dependencies:
   override:
     - bash ci/install.sh
-    - python ci/prepare.py
+    - python ci/init.py
 
 
 compile:
