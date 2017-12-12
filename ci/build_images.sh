@@ -46,7 +46,7 @@ keepalive() {
 }
 
 jobfiles=$(find ./ci/jobs -name "*.job" | sort | awk "NR % ${CIRCLE_NODE_TOTAL} == ${CIRCLE_NODE_INDEX}")
-
+ls ./ci/jobs
 if [ -z "${jobfiles}" ]; then
     echo "[*] More parallelism than tests"
 else
