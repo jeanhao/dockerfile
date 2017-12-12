@@ -1,0 +1,4 @@
+[console_scripts]
+floydker = floydker:cli
+floydker-render = floydker.render:render
+

@@ -1,7 +1,7 @@
 # Dockerfiles
 
 Collection of Dockerfiles useful for NLP and Deep Learning. To download the docker images
-visit: [floydhub's Docker Hub](https://hub.docker.com/r/floydhub/).
+visit: [RussellCloud's Docker Hub](registry.cn-shanghai.aliyuncs.com).
 
 
 ## Naming conventions
@@ -17,8 +17,8 @@ Automated build scripts will generate the following tags for images based on
 the above dockerfile paths:
 
 ```
-floydhub/PROJECT_NAME:VERSION-ENV
-floydhub/PROJECT_NAME:VERSION-ENV-gpu
+registry.cn-shanghai.aliyuncs.com/russellcloud/PROJECT_NAME:VERSION-ENV
+registry.cn-shanghai.aliyuncs.com/russellcloud/PROJECT_NAME:VERSION-ENV-gpu
 ```
 
 Contains docker images for popular deep learning frameworks including: Tensorflow, PyTorch and Torch.
