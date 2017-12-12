@@ -4,17 +4,6 @@ VERSION=v1
 
 set -e
 
-imagepush()
-{
-local image=$1
-echo $1
-repo_to_push="registry.cn-shanghai.aliyuncs.com/russellcloud"
-username="russellcloud"
-password="RussellCloud2017"
-docker login --username=${username} --password=${password}  ${repo_to_push}
-docker push $1
-}
-
 # buildpack-deps
 docker build -t registry.cn-shanghai.aliyuncs.com/russellcloud/buildpack-deps:${VERSION} -f ./base/buildpack-deps/Dockerfile .
 docker push registry.cn-shanghai.aliyuncs.com/russellcloud/buildpack-deps:${VERSION}
