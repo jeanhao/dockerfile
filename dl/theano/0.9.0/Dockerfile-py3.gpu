@@ -1,5 +1,5 @@
-FROM floydhub/dl-base:1.0.0-gpu-py3
-MAINTAINER Floyd Labs "support@floydhub.com"
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-gpu-py3
+MAINTAINER Russell labs "contact@russellcloud.cn"
 
 ARG THEANO_VERSION=rel-0.9.0
 ARG LASAGNE_VERSION=e71bc59b509d2c0cf67622b0d94c69f51b588bd4

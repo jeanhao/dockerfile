@@ -3,16 +3,16 @@ generic: &generic
   _test: tests/run.sh
   py2:
     arch: cpu
-    baseimg: floydhub/dl-base:1.0.0-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-py2
   py3:
     arch: cpu
-    baseimg: floydhub/dl-base:1.0.0-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-py3
   py2.gpu:
     arch: gpu
-    baseimg: floydhub/dl-base:1.0.0-gpu-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-gpu-py2
   py3.gpu:
     arch: gpu
-    baseimg: floydhub/dl-base:1.0.0-gpu-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-gpu-py3
 
 # end of templates
 

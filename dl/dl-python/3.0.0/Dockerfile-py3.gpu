@@ -1,5 +1,5 @@
-FROM floydhub/dl-deps:3.0.0-gpu-py3
-MAINTAINER Floyd Labs "support@floydhub.com"
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:3.0.0-gpu-py3
+MAINTAINER Russell labs "contact@russellcloud.cn"
 
 RUN pip --no-cache-dir install \
         Cython \

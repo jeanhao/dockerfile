@@ -1,5 +1,5 @@
-FROM floydhub/python-base:latest
-MAINTAINER Floyd Labs "support@floydhub.com"
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:latest
+MAINTAINER Russell labs "contact@russellcloud.cn"
 
 # SpaCy
 RUN pip install -U spacy

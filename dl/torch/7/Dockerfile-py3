@@ -1,5 +1,5 @@
-FROM floydhub/dl-base:1.0.0-py3
-MAINTAINER Floyd Labs "support@floydhub.com"
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-py3
+MAINTAINER Russell labs "contact@russellcloud.cn"
 
 # Run Torch7 installation scripts
 RUN git clone https://github.com/torch/distro.git /root/torch --recursive \

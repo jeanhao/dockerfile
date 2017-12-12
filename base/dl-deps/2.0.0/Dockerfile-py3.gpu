@@ -1,5 +1,5 @@
-FROM floydhub/python-base:2.0.0-gpu-py3
-MAINTAINER Floyd Labs "support@floydhub.com"
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:2.0.0-gpu-py3
+MAINTAINER Russell labs "contact@russellcloud.cn"
 
 # Add Bazel distribution URI as a package source
 RUN echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list \

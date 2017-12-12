@@ -1,5 +1,5 @@
-FROM floydhub/dl-base:2.1.0-gpu-py2
-MAINTAINER Floyd Labs "support@floydhub.com"
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:2.1.0-gpu-py2
+MAINTAINER Russell labs "contact@russellcloud.cn"
 
 ARG TENSORFLOW_VERSION=v1.3.0
 ARG KERAS_VERSION=2.0.6

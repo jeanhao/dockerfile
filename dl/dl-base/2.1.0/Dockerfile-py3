@@ -1,5 +1,5 @@
-FROM floydhub/dl-opencv:3.2.0.1-py3.12
-MAINTAINER Floyd Labs "support@floydhub.com"
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.2.0.1-py3.12
+MAINTAINER Russell labs "contact@russellcloud.cn"
 
 # graphviz for visualization
 RUN apt-get update && apt-get install -y \

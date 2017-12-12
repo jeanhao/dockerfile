@@ -29,17 +29,17 @@ def tag(search_root, tag_only):
     For example:
 
     ./dl/tensorflow:
-            floydhub/tensorflow:1.1.0-py2_aws
-            floydhub/tensorflow:1.1.0-gpu-py2_aws
-            floydhub/tensorflow:1.1.0-py2
-            floydhub/tensorflow:1.1.0-py3_aws
-            floydhub/tensorflow:1.1.0-py3
-            floydhub/tensorflow:1.1.0-gpu-py3_aws
+            registry.cn-shanghai.aliyuncs.com/russellcloud/tensorflow:1.1.0-py2_aws
+            registry.cn-shanghai.aliyuncs.com/russellcloud/tensorflow:1.1.0-gpu-py2_aws
+            registry.cn-shanghai.aliyuncs.com/russellcloud/tensorflow:1.1.0-py2
+            registry.cn-shanghai.aliyuncs.com/russellcloud/tensorflow:1.1.0-py3_aws
+            registry.cn-shanghai.aliyuncs.com/russellcloud/tensorflow:1.1.0-py3
+            registry.cn-shanghai.aliyuncs.com/russellcloud/tensorflow:1.1.0-gpu-py3_aws
     ./dl/caffe:
-            floydhub/caffe:1.0-gpu-py2
-            floydhub/caffe:1.0-py2
-            floydhub/caffe:1.0-py3
-            floydhub/caffe:1.0-gpu-py3
+            registry.cn-shanghai.aliyuncs.com/russellcloud/caffe:1.0-gpu-py2
+            registry.cn-shanghai.aliyuncs.com/russellcloud/caffe:1.0-py2
+            registry.cn-shanghai.aliyuncs.com/russellcloud/caffe:1.0-py3
+            registry.cn-shanghai.aliyuncs.com/russellcloud/caffe:1.0-gpu-py3
     """
     for directory in find_project_dirs(search_root):
         if not tag_only:

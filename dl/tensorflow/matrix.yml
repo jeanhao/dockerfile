@@ -4,23 +4,23 @@ tensorflow_pip: &tensorflow_pip
   _test: tests/run.sh
   py2:
     arch: cpu
-    baseimg: floydhub/dl-base:1.0.0-py2.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-py2.6
     cpver: cp27-none
   py3:
     arch: cpu
-    baseimg: floydhub/dl-base:1.0.0-py3.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-py3.6
     cpver: cp35-cp35m
   py2.gpu:
     arch: gpu
     cuda_version: '8.0'
     cudnn_version: '6'
-    baseimg: floydhub/dl-base:1.0.0-gpu-py2.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-gpu-py2.6
     cpver: cp27-none
   py3.gpu:
     arch: gpu
     cuda_version: '8.0'
     cudnn_version: '6'
-    baseimg: floydhub/dl-base:1.0.0-gpu-py3.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-gpu-py3.6
     cpver: cp35-cp35m
 
 tensorflow_aws: &tensorflow_aws
@@ -29,20 +29,20 @@ tensorflow_aws: &tensorflow_aws
   _test: tests/run.sh
   py2_aws:
     arch: cpu
-    baseimg: floydhub/dl-base:1.0.0-py2.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-py2.6
   py3_aws:
     arch: cpu
-    baseimg: floydhub/dl-base:1.0.0-py3.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-py3.6
   py2.gpu_aws:
     arch: gpu
     cuda_version: '8.0'
     cudnn_version: '6'
-    baseimg: floydhub/dl-base:1.0.0-gpu-py2.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-gpu-py2.6
   py3.gpu_aws:
     arch: gpu
     cuda_version: '8.0'
     cudnn_version: '6'
-    baseimg: floydhub/dl-base:1.0.0-gpu-py3.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-gpu-py3.6
 
 # end of templates
 
@@ -53,23 +53,23 @@ tensorflow_aws: &tensorflow_aws
   _test: tests/run.sh
   py2:
     arch: cpu
-    baseimg: floydhub/dl-base:1.0.0-py2.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-py2.6
     cpver: cp27-none
   py3:
     arch: cpu
-    baseimg: floydhub/dl-base:1.0.0-py3.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-py3.6
     cpver: cp35-cp35m
   py2.gpu:
     arch: gpu
     cuda_version: '8.0'
     cudnn_version: '6'
-    baseimg: floydhub/dl-base:1.0.0-gpu-py2.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-gpu-py2.6
     cpver: cp27-none
   py3.gpu:
     arch: gpu
     cuda_version: '8.0'
     cudnn_version: '6'
-    baseimg: floydhub/dl-base:1.0.0-gpu-py3.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-gpu-py3.6
     cpver: cp35-cp35m
 
 1.0.1:
@@ -82,11 +82,11 @@ tensorflow_aws: &tensorflow_aws
     _test: tests/run.sh
     py2_aws:
       arch: cpu
-      baseimg: floydhub/dl-base:1.0.0-py2.6
+      baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-py2.6
       cpver: cp27-none
     py3_aws:
       arch: cpu
-      baseimg: floydhub/dl-base:1.0.0-py3.6
+      baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:1.0.0-py3.6
       cpver: cp35-cp35m
 
 1.1.0:
@@ -105,21 +105,21 @@ tensorflow_aws: &tensorflow_aws
   # bump cpu base for py36
   py2_aws:
     arch: cpu
-    baseimg: floydhub/dl-base:2.1.0-py2.13
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:2.1.0-py2.13
   py3_aws:
     arch: cpu
-    baseimg: floydhub/dl-base:2.1.0-py3.13
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:2.1.0-py3.13
   # bump gpu base for py36 and cudnn6
   py2.gpu_aws:
     arch: gpu
     cuda_version: '8.0'
     cudnn_version: '6'
-    baseimg: floydhub/dl-base:2.1.0-gpu-py2.13
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:2.1.0-gpu-py2.13
   py3.gpu_aws:
     arch: gpu
     cuda_version: '8.0'
     cudnn_version: '6'
-    baseimg: floydhub/dl-base:2.1.0-gpu-py3.13
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:2.1.0-gpu-py3.13
 
 
 1.4.0:
@@ -129,12 +129,12 @@ tensorflow_aws: &tensorflow_aws
       arch: gpu
       cuda_version: '9.0'
       cudnn_version: '7'
-      baseimg: floydhub/dl-base:3.0.0-gpu-py2
+      baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:3.0.0-gpu-py2
     py3.gpu.cuda9cudnn7_aws:
       arch: gpu
       cuda_version: '9.0'
       cudnn_version: '7'
-      baseimg: floydhub/dl-base:3.0.0-gpu-py3
+      baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:3.0.0-gpu-py3
 
 $render:
   # - 0.12.1

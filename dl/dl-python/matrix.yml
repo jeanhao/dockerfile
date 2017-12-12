@@ -3,41 +3,41 @@
   _test: tests/run.sh
   py2:
     arch: cpu
-    baseimg: floydhub/dl-deps:1.0.0-py2.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:1.0.0-py2.6
     cpver: cp2
   py3:
     arch: cpu
-    baseimg: floydhub/dl-deps:1.0.0-py3.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:1.0.0-py3.6
     cpver: cp3
   py2.gpu:
     arch: gpu
-    baseimg: floydhub/dl-deps:1.0.0-gpu-py2.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:1.0.0-gpu-py2.6
     cpver: cp2
   py3.gpu:
     arch: gpu
-    baseimg: floydhub/dl-deps:1.0.0-gpu-py3.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:1.0.0-gpu-py3.6
     cpver: cp3
 
 2.0.0:
   _template: dl-python.jinja
   py2:
     arch: cpu
-    baseimg: floydhub/dl-deps:2.0.0-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:2.0.0-py2
     cpver: cp2
     _test: tests/run.sh
   py3:
     arch: cpu
-    baseimg: floydhub/dl-deps:2.0.0-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:2.0.0-py3
     cpver: cp3
     _test: tests/run.sh
   py2.gpu:
     arch: gpu
-    baseimg: floydhub/dl-deps:2.0.0-gpu-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:2.0.0-gpu-py2
     cpver: cp2
     _test: tests/gpu_run.sh
   py3.gpu:
     arch: gpu
-    baseimg: floydhub/dl-deps:2.0.0-gpu-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:2.0.0-gpu-py3
     cpver: cp3
     _test: tests/gpu_run.sh
 
@@ -45,12 +45,12 @@
   _template: dl-python.jinja
   py2.gpu:
     arch: gpu
-    baseimg: floydhub/dl-deps:3.0.0-gpu-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:3.0.0-gpu-py2
     cpver: cp2
     _test: tests/gpu_run.sh
   py3.gpu:
     arch: gpu
-    baseimg: floydhub/dl-deps:3.0.0-gpu-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:3.0.0-gpu-py3
     cpver: cp3
     _test: tests/gpu_run.sh
 

@@ -6,7 +6,7 @@ PYTHON=-py2
 
 set -euo pipefail
 
-DOCKER_IMAGE=floydhub/dl-base:${VERSION}${ARCH}${PYTHON}
+DOCKER_IMAGE=registry.cn-shanghai.aliyuncs.com/russellcloud/dl-base:${VERSION}${ARCH}${PYTHON}
 
 echo "Pulling docker image..."
 docker pull ${DOCKER_IMAGE}

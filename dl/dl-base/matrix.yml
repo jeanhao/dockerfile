@@ -4,19 +4,19 @@
   py2:
     cpver: py2
     arch: cpu
-    baseimg: floydhub/dl-opencv:3.2.0-py2.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.2.0-py2.6
   py2.gpu:
     cpver: py2
     arch: gpu
-    baseimg: floydhub/dl-opencv:3.2.0-gpu-py2.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.2.0-gpu-py2.6
   py3:
     cpver: py3
     arch: cpu
-    baseimg: floydhub/dl-opencv:3.2.0-py3.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.2.0-py3.6
   py3.gpu:
     cpver: py3
     arch: gpu
-    baseimg: floydhub/dl-opencv:3.2.0-gpu-py3.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.2.0-gpu-py3.6
 
 
 # we only added cupy to dl-opencv 3.3.0, so no change to CPU images
@@ -26,11 +26,11 @@
   py2.gpu:
     cpver: py2
     arch: gpu
-    baseimg: floydhub/dl-opencv:3.2.0-gpu-py2.9
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.2.0-gpu-py2.9
   py3.gpu:
     cpver: py3
     arch: gpu
-    baseimg: floydhub/dl-opencv:3.2.0-gpu-py3.9
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.2.0-gpu-py3.9
 
 # we only moved to cudnn6 in python-base, so no change to CPU images
 2.0.0: &2_x_x
@@ -39,19 +39,19 @@
   py2:
     cpver: py2
     arch: cpu
-    baseimg: floydhub/dl-opencv:3.2.0.1-py2.12
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.2.0.1-py2.12
   py3:
     cpver: py3
     arch: cpu
-    baseimg: floydhub/dl-opencv:3.2.0.1-py3.12
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.2.0.1-py3.12
   py2.gpu:
     cpver: py2
     arch: gpu
-    baseimg: floydhub/dl-opencv:3.2.0.1-gpu-py2.12
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.2.0.1-gpu-py2.12
   py3.gpu:
     cpver: py3
     arch: gpu
-    baseimg: floydhub/dl-opencv:3.2.0.1-gpu-py3.12
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.2.0.1-gpu-py3.12
 
 2.1.0:
   - <<: *2_x_x
@@ -63,19 +63,19 @@
   py2:
     cpver: py2
     arch: cpu
-    baseimg: floydhub/dl-opencv:3.3.1.1-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.3.1.1-py2
   py3:
     cpver: py3
     arch: cpu
-    baseimg: floydhub/dl-opencv:3.3.1.1-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.3.1.1-py3
   py2.gpu:
     cpver: py2
     arch: gpu
-    baseimg: floydhub/dl-opencv:3.3.1.1-gpu-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.3.1.1-gpu-py2
   py3.gpu:
     cpver: py3
     arch: gpu
-    baseimg: floydhub/dl-opencv:3.3.1.1-gpu-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.3.1.1-gpu-py3
 
 $render:
   # - 1.0.0

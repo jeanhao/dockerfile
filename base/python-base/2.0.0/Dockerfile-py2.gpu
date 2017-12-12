@@ -1,5 +1,5 @@
-FROM floydhub/buildpack-deps:cuda8-cudnn6-1.0
-MAINTAINER Floyd Labs "support@floydhub.com"
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/buildpack-deps:cuda8-cudnn6-1.0
+MAINTAINER Russell labs "contact@russellcloud.cn"
 
 # From https://github.com/docker-library/python/blob/master/2.7./Dockerfile
 

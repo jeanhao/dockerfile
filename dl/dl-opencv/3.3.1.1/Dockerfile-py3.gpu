@@ -1,5 +1,5 @@
-FROM floydhub/dl-python:3.0.0-gpu-py3
-MAINTAINER Floyd Labs "support@floydhub.com"
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:3.0.0-gpu-py3
+MAINTAINER Russell labs "contact@russellcloud.cn"
 
 ARG OPENCV_VERSION=3.3.1
 

@@ -11,6 +11,6 @@ CI steps
 1. push image to dockerhub (TODO).
 
 
-See [floydker's documentation](https://github.com/floydhub/dockerfiles/blob/master/floydker/README.md)
+See [floydker's documentation](https://github.com/registry.cn-shanghai.aliyuncs.com/russellcloud/dockerfiles/blob/master/floydker/README.md)
 on how to generate dockerfiles with templates using `floydker render` command
 and define tests for dockerfiles in `matrix.yml`.

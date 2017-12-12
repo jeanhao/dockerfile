@@ -77,10 +77,10 @@ def find_project_dirs(search_root):
 def gen_tag_from_filepath(dockerfile_path):
     '''
     sample input: dl/tensorflow/1.0.1/Dockerfile-py3.gpu
-    sample output: floydhub/tensorflow:1.0.1-gpu-py3
+    sample output: registry.cn-shanghai.aliyuncs.com/russellcloud/tensorflow:1.0.1-gpu-py3
 
     sample input: dl/tensorflow/1.4.0/Dockerfile-py3.gpu.cuda9cudnn7_aws
-    sample output: floydhub/tensorflow:1.4.0-gpu.cuda9cudnn7-py3_aws
+    sample output: registry.cn-shanghai.aliyuncs.com/russellcloud/tensorflow:1.4.0-gpu.cuda9cudnn7-py3_aws
     '''
     abs_path = os.path.realpath(dockerfile_path)
 
@@ -93,7 +93,7 @@ def gen_tag_from_filepath(dockerfile_path):
 
     project = path_parts[1]
     version = path_parts[2]
-    tag_components = ['floydhub/%s:%s' % (project, version)]
+    tag_components = ['registry.cn-shanghai.aliyuncs.com/russellcloud/%s:%s' % (project, version)]
 
     dockerfile_name = path_parts[-1]
     match = dockerfile_name_re.match(dockerfile_name)
@@ -141,7 +141,7 @@ def gen_target_env_from_tag(img_tag):
     sample input: 'tensorflow:1.0.1-gpu-py3'
     sample output: ('1.0.1', 'py3.gpu')
 
-    sample input: 'floydhub/tensorflow:1.0.1-gpu-py3_aws'
+    sample input: 'registry.cn-shanghai.aliyuncs.com/russellcloud/tensorflow:1.0.1-gpu-py3_aws'
     sample output: ('1.0.1', 'py3.gpu_aws')
     """
     match = docker_tag_re.match(img_tag)

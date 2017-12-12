@@ -1,5 +1,5 @@
-FROM floydhub/spacy:latest
-MAINTAINER Floyd Labs "support@floydhub.com"
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/spacy:latest
+MAINTAINER Russell labs "contact@russellcloud.cn"
 
 # Install dependencies
 RUN pip --no-cache-dir install \

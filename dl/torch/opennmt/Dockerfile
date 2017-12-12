@@ -1,5 +1,5 @@
-FROM floydhub/torch:latest
-MAINTAINER Floyd Labs "support@floydhub.com"
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/torch:latest
+MAINTAINER Russell labs "contact@russellcloud.cn"
 
 RUN luarocks install tds && \
 	luarocks install nngraph && \

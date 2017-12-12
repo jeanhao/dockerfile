@@ -1,5 +1,5 @@
-FROM floydhub/buildpack-deps:v1-gpu
-MAINTAINER Floyd Labs "support@floydhub.com"
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/buildpack-deps:v1-gpu
+MAINTAINER Russell labs "contact@russellcloud.cn"
 
 # From https://github.com/docker-library/python/blob/master/3.5./Dockerfile
 
