@@ -88,5 +88,5 @@ if rebuild_glob_pattern:
         if 'Dockerfile' in matched_file:
             job_id = hashlib.sha224(matched_file).hexdigest()
             print('Creating jobs file %s for %s...' % (job_id, matched_file))
-            with open(os.path.join(JOB_LIST_DIR, job_id + '.job'), 'w') as f:
+            with open(os.path.join(JOB_LIST_DIR, job_id + '.job'), 'w') as f: 
                 f.write(matched_file)
