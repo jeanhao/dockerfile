@@ -3,7 +3,7 @@
 {% block content %}
 ARG OPENCV_VERSION={{ _version }}
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --force-yes \
         python-opencv \
         libavcodec-dev \
         libavformat-dev \

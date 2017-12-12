@@ -3,7 +3,7 @@ FROM nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
 MAINTAINER RussellCloud "contact@russellcloud.cn"
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
+    && apt-get install -y --force-yes --no-install-recommends \
         sudo \
         # Based on https://github.com/docker-library/buildpack-deps/tree/master/xenial
         ca-certificates \

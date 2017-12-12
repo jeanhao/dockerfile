@@ -1,6 +1,6 @@
 FROM registry.cn-shanghai.aliyuncs.com/russellcloud/java-base:8
 
-RUN apt-get install -y \
+RUN apt-get install -y --force-yes \
       unzip \
     && apt-get clean  && \
     rm -rf /var/lib/apt/lists/*

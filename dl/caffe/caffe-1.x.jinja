@@ -3,7 +3,7 @@
 {% block content %}
 ARG CAFFE_VERSION={{ _version }}
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y --force-yes --no-install-recommends \
         libboost-all-dev \
         libgflags-dev \
         libgoogle-glog-dev \

@@ -3,7 +3,7 @@ MAINTAINER Russell labs "contact@russellcloud.cn"
 
 ARG CAFFE_VERSION=1.0
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y --force-yes --no-install-recommends \
         libboost-all-dev \
         libgflags-dev \
         libgoogle-glog-dev \

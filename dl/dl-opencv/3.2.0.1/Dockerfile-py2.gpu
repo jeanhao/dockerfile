@@ -3,7 +3,7 @@ MAINTAINER Russell labs "contact@russellcloud.cn"
 
 ARG OPENCV_VERSION=3.2.0
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --force-yes \
         python-opencv \
         libavcodec-dev \
         libavformat-dev \
