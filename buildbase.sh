@@ -4,7 +4,7 @@ CONTENT=$0
 VERSION=$1
 
 set -e
-docker login --username=${USERNAME} --password=${PASSWORD} ${REPO_TO_PUSH}
+# docker login --username=${USERNAME} --password=${PASSWORD} ${REPO_TO_PUSH}
 
 # buildpack-deps
 if [ "$CONTENT" = "buildpack-deps" ];then

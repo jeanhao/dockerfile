@@ -7,7 +7,7 @@ ANSI_RESET="\033[0m"
 # shellcheck disable=SC2034
 ANSI_CLEAR="\033[0K"
 docker version
-docker login --username=${USERNAME} --password=${PASSWORD} ${REPO_TO_PUSH}
+# docker login --username=${USERNAME} --password=${PASSWORD} ${REPO_TO_PUSH}
 
 retry_cmd() {
     local result=0
