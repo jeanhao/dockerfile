@@ -10,6 +10,7 @@ else
     while read -r line; do
         echo "[*] Node ${CIRCLE_NODE_INDEX} running test for job ${line}..."
         dockerfile=$(cat "${line}")
+        echo "test dockerfile $dockerfile"
         floydker test "${dockerfile}" || {
             echo "${dockerfile} test failed."
             exit 1

@@ -3,3 +3,6 @@
 venv
 .tox
 .cache
+src/floydker.egg-info
+dist/
+build/
