@@ -31,7 +31,7 @@ def push(dockerfile, version, test, show_tag_only):
     logger.info('--------------------------------------------')
     logger.info('[*] taging image %s with %s to replace tag %s...', dockerfile, target_image_tag, image_tag)
     logger.info('--------------------------------------------')
-    check_call("docker tag {} {}".format(image_tag, target_image_tag))
+    check_call("docker tag {} {}".format(image_tag, target_image_tag), shell=True)
 
     logger.info('--------------------------------------------')
     logger.info('[*] pushing %s with tag %s...', dockerfile, image_tag)
