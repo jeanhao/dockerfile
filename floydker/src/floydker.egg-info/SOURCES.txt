@@ -1,7 +1,9 @@
+README.md
 setup.py
 src/floydker/__init__.py
 src/floydker/build.py
 src/floydker/list_cmd.py
+src/floydker/push.py
 src/floydker/render.py
 src/floydker/test.py
 src/floydker/utils.py

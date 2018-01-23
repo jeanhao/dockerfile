@@ -13,7 +13,7 @@ dockerfile_name_re = re.compile(
     '(_(?P<cloud>(aws)))?')
 
 docker_tag_re = re.compile(
-    '(?P<project>[a-z\-\/]+)'
+    '(?P<project>[a-z\-\.\/]+)'
     ':(?P<version>[0-9.]+)'
     '(-(?P<arch>gpu(\.[a-z0-9]+)?))?'
     '-(?P<env>[^._]+)'
