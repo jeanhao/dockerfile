@@ -34,3 +34,5 @@ RUN chmod +x /run_jupyter.sh
 EXPOSE 8888
 
 CMD ["/run_jupyter.sh"]
+
+ENV HELLO=HELLO

@@ -23,7 +23,7 @@ test:
 
 
 deployment:
-  dockerhub:
-    branch: master
+  staging:
+    branch: dev
     commands:
       - bash ci/push_dockerhub.sh
