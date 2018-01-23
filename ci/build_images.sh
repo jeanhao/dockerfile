@@ -47,12 +47,6 @@ keepalive() {
     done
 }
 
-
-# login docker
-echo "try to login to aliyun docker hub...."
-docker login --username=${DOCKER_USERNAME} -e ${DOCKER_USERNAME} --password=${DOCKER_PASSWORD} registry.cn-shanghai.aliyuncs.com
-echo "login ret: $?"
-
 jobfiles=$(find ./ci/jobs -name "*.job" | sort | awk "NR % ${CIRCLE_NODE_TOTAL} == ${CIRCLE_NODE_INDEX}")
 echo "cur path: `pwd`"
 ls ./ci/jobs
@@ -62,6 +56,10 @@ else
     keepalive &
     ALIVEPID=$!
 
+    # login docker
+    echo "try to login to aliyun docker hub...."
+    docker login --username=${DOCKER_USERNAME} -e ${DOCKER_USERNAME} --password=${DOCKER_PASSWORD} registry.cn-shanghai.aliyuncs.com
+    echo "login ret: $?"
 
     while read -r line; do
         echo "[*] Node ${CIRCLE_NODE_INDEX} running job ${line}..."
