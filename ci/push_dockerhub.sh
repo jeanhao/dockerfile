@@ -47,6 +47,8 @@ keepalive() {
 }
 
 jobfiles=$(find ./ci/jobs -name "*.job" | sort | awk "NR % ${CIRCLE_NODE_TOTAL} == ${CIRCLE_NODE_INDEX}")
+echo "cur path: `pwd`"
+ls ./ci/jobs
 
 # login docker
 echo "try to login to aliyun docker hub...."
