@@ -4,19 +4,19 @@
   py2:
     cpver: cp2
     arch: cpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:v1-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:1.0.0-py2.v30.test
   py3:
     cpver: cp3
     arch: cpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:v1-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:1.0.0-py3.v30.test
   py2.gpu:
     cpver: cp2
     arch: gpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:v1-gpu-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:1.0.0-gpu-py2.v30.test
   py3.gpu:
     cpver: cp3
     arch: gpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:v1-gpu-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:1.0.0-gpu-py3.v30.test
 
 
 2.0.0:
@@ -25,19 +25,19 @@
   py2:
     cpver: cp2
     arch: cpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:2.0.0-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:2.0.0-py2.v30.test
   py3:
     cpver: cp3
     arch: cpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:2.0.0-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:2.0.0-py3.v30.test
   py2.gpu:
     cpver: cp2
     arch: gpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:2.0.0-gpu-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:2.0.0-gpu-py2.v30.test
   py3.gpu:
     cpver: cp3
     arch: gpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:2.0.0-gpu-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:2.0.0-gpu-py3.v30.test
 
 
 3.0.0:
@@ -46,11 +46,11 @@
   py2.gpu:
     cpver: cp2
     arch: gpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:3.0.0-gpu-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:3.0.0-gpu-py2.v30.test
   py3.gpu:
     cpver: cp3
     arch: gpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:3.0.0-gpu-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:3.0.0-gpu-py3.v30.test
 
 
 $render:

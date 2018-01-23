@@ -1,4 +1,4 @@
-FROM registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:v1-py3
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:1.0.0-py3.v30.test
 MAINTAINER Russell labs "contact@russellcloud.cn"
 
 # Add Bazel distribution URI as a package source

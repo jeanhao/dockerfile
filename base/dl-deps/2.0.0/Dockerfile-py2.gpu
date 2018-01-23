@@ -1,4 +1,4 @@
-FROM registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:2.0.0-gpu-py2
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:2.0.0-gpu-py2.v30.test
 MAINTAINER Russell labs "contact@russellcloud.cn"
 
 # Add Bazel distribution URI as a package source

@@ -35,11 +35,25 @@ retry_cmd() {
     return $result
 }
 
+
+keepalive() {
+    # Sometimes, circleci got stuck and there will be no build output for 10min,
+    # which causes the build to fail.
+    # TODO: Remove this hack when this issue is resolved.
+    while true; do
+        echo "[$(date)] keepalive heartbeat..."
+        sleep 60
+    done
+}
+
 jobfiles=$(find ./ci/jobs -name "*.job" | sort | awk "NR % ${CIRCLE_NODE_TOTAL} == ${CIRCLE_NODE_INDEX}")
 
 if [ -z "${jobfiles}" ]; then
     echo "[*] More parallelism than tests"
 else
+
+    keepalive &
+    ALIVEPID=$!
 
     # login docker
     echo "try to login to aliyun docker hub...."
@@ -56,10 +70,14 @@ else
         }
 
         echo "test end, try to push docker to server..."
-        retry_cmd floydker push "${dockerfile}" "v${CIRCLE_BUILD_NUM}" ${CIRCLE_IS_TEST} || {
+        retry_cmd floydker push "${dockerfile}" "v${VERSION_NUM}" ${CIRCLE_IS_TEST} || {
             echo "Failed pushing ${dockerfile}."
+            kill -9 "${ALIVEPID}"
             exit 1
         }
     done <<< "${jobfiles}"
+
+    echo "Done, killing keepalive process: pid(${PID})."
+    kill -9 "${ALIVEPID}"
 
 fi
