@@ -1,4 +1,4 @@
-FROM registry.cn-shanghai.aliyuncs.com/russellcloud/buildpack-deps:cuda8-cudnn6-1.0
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/buildpack-deps:cuda8-cudnn6-1.0.v0
 MAINTAINER Russell labs "contact@russellcloud.cn"
 
 # From https://github.com/docker-library/python/blob/master/3.6./Dockerfile

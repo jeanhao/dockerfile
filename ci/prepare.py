@@ -63,6 +63,11 @@ def find_changed_dockerfiles():
             if 'dl/dl-base' in l:
                 print('FIXME: Skipping base image: %s' % l)
                 continue
+            # TODO: support buildpack-deps image
+            if 'base/buildpack-deps' in l:
+                print('FIXME: Skipping buildpack-deps image: %s' % l)
+                continue
+
             if os.path.exists(l.strip()):
                 changed_dockerfiles.append(l)
 
