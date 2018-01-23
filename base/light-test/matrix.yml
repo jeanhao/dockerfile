@@ -1,0 +1,8 @@
+test:
+  _template: test-base.jinja
+  py2:
+    baseimg: alpine:3.5
+
+
+$render:
+  - test
