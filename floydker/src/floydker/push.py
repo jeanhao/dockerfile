@@ -36,6 +36,6 @@ def push(dockerfile, version, test, show_tag_only):
     logger.info('--------------------------------------------')
     logger.info('[*] pushing %s with tag %s...', dockerfile, image_tag)
     logger.info('--------------------------------------------')
-    cmd = "docker push {}".format(image_tag)
+    cmd = "docker push {}".format(target_image_tag)
     logging.info("cmd: {}".format(cmd))
     check_call(cmd, shell=True)
