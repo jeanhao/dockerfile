@@ -45,7 +45,7 @@ keepalive() {
         sleep 60
     done
 }
-echo "find watch:  `find ./ci/jobs -name "*.job" | sort | awk "NR"`"
+echo "find watch:  `find ./ci/jobs -name "*.job" | sort | awk "{print NR,$1}"`"
 jobfiles=$(find ./ci/jobs -name "*.job" | sort | awk "NR % ${CIRCLE_NODE_TOTAL} == ${CIRCLE_NODE_INDEX}")
 echo "cur path: `pwd`"
 ls ./ci/jobs
