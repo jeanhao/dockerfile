@@ -56,7 +56,7 @@ def test(dockerfile, use_nvidia_driver, extra_docker_args):
     with open(matrix_yml_path) as matrix_fobj:
         matrix = yaml.load(matrix_fobj)
 
-    target, env = gen_target_env_from_tag()
+    target, env = gen_target_env_from_tag(image_tag)
     if target not in matrix:
         logger.error('target %s not found in matrix.', target)
         sys.exit(1)

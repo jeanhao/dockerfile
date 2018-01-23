@@ -62,7 +62,7 @@ else
     while read -r line; do
         echo "[*] Node ${CIRCLE_NODE_INDEX} running job ${line}..."
         dockerfile=$(cat "${line}")
-        retry_cmd floydker push "${dockerfile}" "${CIRCLE_BUILD_NUM}" --test || {
+        retry_cmd floydker push "${dockerfile}" "${CIRCLE_BUILD_NUM}" ${CIRCLE_IS_TEST} || {
             echo "Failed pushing ${dockerfile}."
             kill -9 "${ALIVEPID}"
             exit 1

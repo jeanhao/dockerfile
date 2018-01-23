@@ -15,7 +15,7 @@ click_log.basic_config(logger)
 @click.command()
 @click.argument('dockerfile')
 @click.argument('version')
-@click.option("--test", is_flag=True, default=True, help="Infer test environment")
+@click.option("--test", is_flag=True, default=False, help="Infer test environment")
 @click.option('--show-tag-only/--no-show-tag-only',
               help='skip build, only print out image tag name',
               default=False)
