@@ -16,15 +16,15 @@ compile:
         parallel: true
 
 
-test:
-  override:
-    - bash ci/test_images.sh:
-        parallel: true
-
-
-deployment:
-  staging:
-    branch: dev
-    commands:
-      - bash ci/push_dockerhub.sh:
-        parallel: true
+#test:
+#  override:
+#    - bash ci/test_images.sh:
+#        parallel: true
+#
+#
+#deployment:
+#  staging:
+#    branch: dev
+#    commands:
+#      - bash ci/push_dockerhub.sh:
+#        parallel: true

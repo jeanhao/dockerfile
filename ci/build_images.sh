@@ -64,6 +64,7 @@ else
     docker login --username=${DOCKER_USERNAME} -e ${DOCKER_USERNAME} --password=${DOCKER_PASSWORD} registry.cn-shanghai.aliyuncs.com
     echo "login ret: $?"
 
+    # build images
     while read -r line; do
         echo "[*] Node ${CIRCLE_NODE_INDEX} running job ${line}..."
         dockerfile=$(cat "${line}")
@@ -76,4 +77,32 @@ else
 
     echo "Done, killing keepalive process: pid(${PID})."
     kill -9 "${ALIVEPID}"
+
+
+    # test images
+    while read -r line; do
+        echo "[*] Node ${CIRCLE_NODE_INDEX} running test for job ${line}..."
+        dockerfile=$(cat "${line}")
+        echo "test dockerfile $dockerfile"
+        floydker test "${dockerfile}" || {
+            echo "${dockerfile} test failed."
+            exit 1
+        }
+    done <<< "${jobfiles}"
+
+    # push images
+    while read -r line; do
+        echo "[*] Node ${CIRCLE_NODE_INDEX} running job ${line}..."
+        dockerfile=$(cat "${line}")
+        retry_cmd floydker push "${dockerfile}" "v${CIRCLE_BUILD_NUM}" ${CIRCLE_IS_TEST} || {
+            echo "Failed pushing ${dockerfile}."
+            kill -9 "${ALIVEPID}"
+            exit 1
+        }
+    done <<< "${jobfiles}"
+
+    echo "Done, killing keepalive process: pid(${PID})."
+    kill -9 "${ALIVEPID}"
 fi
+
+
