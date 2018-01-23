@@ -58,7 +58,6 @@ else
         echo "test end, try to push docker to server..."
         retry_cmd floydker push "${dockerfile}" "v${CIRCLE_BUILD_NUM}" ${CIRCLE_IS_TEST} || {
             echo "Failed pushing ${dockerfile}."
-            kill -9 "${ALIVEPID}"
             exit 1
         }
     done <<< "${jobfiles}"
