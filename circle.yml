@@ -26,4 +26,5 @@ deployment:
   staging:
     branch: dev
     commands:
-      - bash ci/push_dockerhub.sh
+      - bash ci/push_dockerhub.sh:
+        parallel: true
