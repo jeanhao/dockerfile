@@ -5,7 +5,7 @@ import os
 
 
 def test_gen_tag_from_filepath():
-    from russell-maker.utils import gen_tag_from_filepath
+    from floydker.utils import gen_tag_from_filepath
     tag = gen_tag_from_filepath('dl/tensorflow/1.0.1/Dockerfile-py3.gpu')
     assert tag == 'registry.cn-shanghai.aliyuncs.com/russellcloud/tensorflow:1.0.1-gpu-py3'
 
@@ -26,7 +26,7 @@ def test_gen_tag_from_filepath():
 
 
 def test_find_matrix_from_dockerfile():
-    from russell-maker.utils import find_matrix_from_dockerfile
+    from floydker.utils import find_matrix_from_dockerfile
     matrix_path = find_matrix_from_dockerfile(
         'dl/tensorflow/1.0.1/Dockerfile-py3.gpu')
 
@@ -35,7 +35,7 @@ def test_find_matrix_from_dockerfile():
 
 
 def test_gen_target_env_from_tag():
-    from russell-maker.utils import gen_target_env_from_tag
+    from floydker.utils import gen_target_env_from_tag
     target, env = gen_target_env_from_tag('tensorflow:1.0.1-gpu-py3')
     assert target == '1.0.1'
     assert env == 'py3.gpu'
