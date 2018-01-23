@@ -32,5 +32,3 @@ RUN pip --no-cache-dir install git+git://github.com/fchollet/keras.git@${KERAS_V
 
 # Set Backed to Theano
 ENV KERAS_BACKEND='theano'
-
-ENV HELLO=HELLO
