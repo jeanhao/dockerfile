@@ -1,4 +1,4 @@
 FROM alpine:3.5
 MAINTAINER Russell labs "contact@russellcloud.cn"
 
-RUN echo "Hello World!"
+RUN echo "Hello World2!"
