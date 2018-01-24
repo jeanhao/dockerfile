@@ -58,7 +58,6 @@ RUN apt-get update && apt-get install -y --force-yes \
 # Link BLAS library to use OpenBLAS using the alternatives mechanism (https://www.scipy.org/scipylib/building/linux.html#debian-ubuntu)
     && update-alternatives --set libblas.so.3 /usr/lib/openblas-base/libblas.so.3
 
-
 # Install Git LFS
 RUN apt-get update \
     && add-apt-repository ppa:git-core/ppa \
