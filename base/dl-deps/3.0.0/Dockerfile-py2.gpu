@@ -1,4 +1,4 @@
-FROM registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:3.0.0-gpu-py2.v30.test
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/python-base:3.0.0-gpu-py2.v0.0.1.test
 MAINTAINER Russell labs "contact@russellcloud.cn"
 
 # Add Bazel distribution URI as a package source
@@ -57,7 +57,6 @@ RUN apt-get update && apt-get install -y --force-yes \
     && rm -rf /var/cache/apt/archives/* \
 # Link BLAS library to use OpenBLAS using the alternatives mechanism (https://www.scipy.org/scipylib/building/linux.html#debian-ubuntu)
     && update-alternatives --set libblas.so.3 /usr/lib/openblas-base/libblas.so.3
-
 
 # Install Git LFS
 RUN apt-get update \
