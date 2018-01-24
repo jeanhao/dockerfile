@@ -33,4 +33,5 @@ RUN chmod +x /run_jupyter.sh
 # IPython
 EXPOSE 8888
 
+
 CMD ["/run_jupyter.sh"]
