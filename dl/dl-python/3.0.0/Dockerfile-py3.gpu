@@ -21,6 +21,7 @@ RUN pip --no-cache-dir install \
         && \
     python -m ipykernel.kernelspec
 
+
 # Set up our notebook config.
 COPY jupyter_notebook_config_py3.py /root/.jupyter/
 RUN mv /root/.jupyter/jupyter_notebook_config_py3.py /root/.jupyter/jupyter_notebook_config.py
