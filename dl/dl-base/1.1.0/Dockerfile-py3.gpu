@@ -1,4 +1,4 @@
-FROM registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.2.0-gpu-py3.9
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.2.0-gpu-py3.v0.0.1.test
 MAINTAINER Russell labs "contact@russellcloud.cn"
 
 RUN pip --no-cache-dir install \
@@ -22,7 +22,11 @@ RUN git clone --branch v0.21.3 https://github.com/openai/universe.git \
 # Install xgboost
 RUN git clone --recursive https://github.com/dmlc/xgboost \
     && cd xgboost \
+    && mkdir build \
+    && cd build \
+    && cmake .. -DUSE_CUDA=ON \
     && make -j$(nproc) \
+    && cd .. \
     && cd python-package \
     && python setup.py install \
     && cd ../.. \

@@ -1,4 +1,4 @@
-FROM registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.2.0-py3.6
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.2.0-py3.v0.0.1.test
 MAINTAINER Russell labs "contact@russellcloud.cn"
 
 RUN pip --no-cache-dir install \

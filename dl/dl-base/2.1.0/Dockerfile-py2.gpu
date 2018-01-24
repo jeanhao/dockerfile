@@ -1,4 +1,4 @@
-FROM registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.2.0.1-gpu-py2.12
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/dl-opencv:3.2.0.1-gpu-py2.v0.0.1.test
 MAINTAINER Russell labs "contact@russellcloud.cn"
 
 # graphviz for visualization
