@@ -1,4 +1,4 @@
-FROM registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:2.0.0-py2
+FROM registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:2.0.0-py2.v0.0.1.test
 MAINTAINER Russell labs "contact@russellcloud.cn"
 
 RUN pip --no-cache-dir install \

@@ -1,43 +1,47 @@
-1.1.0:
+1.0.0:
   _template: dl-python.jinja
   _test: tests/run.sh
   py2:
     arch: cpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:1.0.0-py2.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:1.0.0-py2.v0.0.1.test
     cpver: cp2
   py3:
     arch: cpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:1.0.0-py3.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:1.0.0-py3.v0.0.1.test
     cpver: cp3
+
+1.1.0:
+  _template: dl-python.jinja
+  _test: tests/run.sh
   py2.gpu:
     arch: gpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:1.0.0-gpu-py2.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:1.0.0-gpu-py2.v0.0.1.test
     cpver: cp2
   py3.gpu:
     arch: gpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:1.0.0-gpu-py3.6
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:1.0.0-gpu-py3.v0.0.1.test
     cpver: cp3
 
 2.0.0:
   _template: dl-python.jinja
   py2:
     arch: cpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:2.0.0-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:2.0.0-py2.v0.0.1.test
     cpver: cp2
     _test: tests/run.sh
   py3:
     arch: cpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:2.0.0-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:2.0.0-py3.v0.0.1.test
     cpver: cp3
     _test: tests/run.sh
   py2.gpu:
     arch: gpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:2.0.0-gpu-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:2.0.0-gpu-py2.v0.0.1.test
     cpver: cp2
     _test: tests/gpu_run.sh
   py3.gpu:
     arch: gpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:2.0.0-gpu-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:2.0.0-gpu-py3.v0.0.1.test
     cpver: cp3
     _test: tests/gpu_run.sh
 
@@ -45,17 +49,18 @@
   _template: dl-python.jinja
   py2.gpu:
     arch: gpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:3.0.0-gpu-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:3.0.0-gpu-py2.v0.0.1.test
     cpver: cp2
     _test: tests/gpu_run.sh
   py3.gpu:
     arch: gpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:3.0.0-gpu-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-deps:3.0.0-gpu-py3.v0.0.1.test
     cpver: cp3
     _test: tests/gpu_run.sh
 
 
 $render:
+  - 1.0.0
   - 1.1.0
   - 2.0.0
   - 3.0.0
