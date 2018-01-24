@@ -73,6 +73,14 @@ else
             kill -9 "${ALIVEPID}"
             exit 1
         }
+
+        echo "Build end. Try to push image..."
+        # push images
+        retry_cmd floydker push "${dockerfile}" "v${VERSION_NUM}" ${CIRCLE_IS_TEST} || {
+            echo "Failed pushing ${dockerfile}."
+            kill -9 "${ALIVEPID}"
+            exit 1
+        }
     done <<< "${jobfiles}"
 
     echo "Done, killing keepalive process: pid(${PID})."
