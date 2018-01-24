@@ -3,16 +3,16 @@
   _version: '3.2.0'
   py2:
     arch: cpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:1.0.0-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:1.0.0-py2.v0.0.1.test
   py3:
     arch: cpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:1.0.0-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:1.0.0-py3.v0.0.1.test
   py2.gpu:
     arch: gpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:1.1.0-gpu-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:1.1.0-gpu-py2.v0.0.1.test
   py3.gpu:
     arch: gpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:1.1.0-gpu-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:1.1.0-gpu-py3.v0.0.1.test
 
 
 3.2.0.1:
@@ -20,16 +20,16 @@
   _version: '3.2.0'
   py2:
     arch: cpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:2.0.0-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:2.0.0-py2.v0.0.1.test
   py3:
     arch: cpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:2.0.0-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:2.0.0-py3.v0.0.1.test
   py2.gpu:
     arch: gpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:2.0.0-gpu-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:2.0.0-gpu-py2.v0.0.1.test
   py3.gpu:
     arch: gpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:2.0.0-gpu-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:2.0.0-gpu-py3.v0.0.1.test
 
 
 3.3.1.1:
@@ -37,16 +37,16 @@
   _version: '3.3.1'
   py2:
     arch: cpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:2.0.0-py2.12
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:2.0.0-py2.v0.0.1.test
   py3:
     arch: cpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:2.0.0-py3.12
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:2.0.0-py3.v0.0.1.test
   py2.gpu:
     arch: gpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:3.0.0-gpu-py2
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:3.0.0-gpu-py2.v0.0.1.test
   py3.gpu:
     arch: gpu
-    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:3.0.0-gpu-py3
+    baseimg: registry.cn-shanghai.aliyuncs.com/russellcloud/dl-python:3.0.0-gpu-py3.v0.0.1.test
 
 $render:
   - 3.2.0
